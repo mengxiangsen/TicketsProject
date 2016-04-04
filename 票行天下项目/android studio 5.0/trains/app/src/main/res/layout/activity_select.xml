@@ -1,0 +1,235 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#e3f3ff"
+   >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:background="@drawable/selectfrom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        >
+
+        <ImageView
+            android:id="@+id/jiantou"
+            android:layout_width="75dp"
+            android:layout_height="37dp"
+            android:src="@drawable/jiantou"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp">
+            <TextView
+                android:id="@+id/start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出发城市"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/zxh_tv1"
+                android:text="北京"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/start"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end"
+                android:text="抵达城市"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:id="@+id/zxh_tv2"
+                android:text="上海"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_below="@+id/end"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:id="@+id/tv3">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出发时间"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+           />
+
+        <EditText
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#e3f3ff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:hint="选择出发时间"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"></LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+        android:layout_height="30dp"
+        android:layout_width="55dp"
+        android:text="全部"
+        android:textSize="12sp"
+        android:background="@drawable/select"
+        android:id="@+id/s1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:textColor="#fff"
+        android:gravity="center"
+            />
+
+        <TextView
+            android:layout_height="30dp"
+            android:layout_width="55dp"
+            android:text="G/D/C"
+            android:textSize="12sp"
+            android:id="@+id/s2"
+            android:layout_toRightOf="@+id/s1"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <TextView
+        android:layout_height="30dp"
+        android:layout_width="55dp"
+        android:text="Z字头"
+        android:textSize="13sp"
+        android:id="@+id/s3"
+        android:layout_toRightOf="@+id/s2"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+            android:textColor="#000000"
+        />
+
+        <TextView
+        android:layout_height="30dp"
+        android:layout_width="55dp"
+        android:text="T字头"
+        android:textSize="13sp"
+        android:id="@+id/s4"
+        android:layout_toRightOf="@+id/s3"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+            android:textColor="#000000"
+         />
+
+        <TextView
+        android:layout_height="30dp"
+        android:layout_width="55dp"
+        android:text="其他"
+        android:textSize="13sp"
+        android:id="@+id/s5"
+        android:layout_toRightOf="@+id/s4"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+            android:textColor="#000000"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000000"></LinearLayout>
+
+    <Button
+        android:id="@+id/selectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索"
+        android:textColor="#fff"
+        android:background="@drawable/selectbutton"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loginlable"
+            android:layout_alignParentLeft="true"/>
+
+        <Button
+            android:id="@+id/myorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="我的订单"
+            android:background="#e3f3ff"
+            android:layout_marginLeft="-24dp"/>
+    </LinearLayout>
+</RelativeLayout>

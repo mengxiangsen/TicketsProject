@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">票行天下</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">register</string>
+    <string name="title_activity_success">success</string>
+    <string name="title_activity_two">two</string>
+    <string name="title_activity_select">select</string>
+
+
+    <string-array name="startPlace">
+        <item>上海</item>
+        <item>南京</item>
+        <item>北京</item>
+        <item>安徽</item>
+        <item>河南</item>
+        <item>黑龙江</item>
+        <item>徐州</item>
+        <item>苏州</item>
+        <item>宿迁</item>
+    </string-array>
+    <string name="title_activity_show">show</string>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <string name="title_activity_order">order</string>
+    <string name="title_activity_myorder">myorder</string>
+    <string name="title_activity_disshow">disshow</string>
+</resources>

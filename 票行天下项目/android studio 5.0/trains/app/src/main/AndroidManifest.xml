@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.trains" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".register"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".success"
+            android:label="@string/title_activity_success" >
+        </activity>
+        <activity
+            android:name=".select"
+            android:label="@string/title_activity_select" >
+        </activity>
+        <activity
+            android:name=".show"
+            android:label="@string/title_activity_show" >
+        </activity>
+        <activity
+            android:name=".order"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name=".myorder"
+            android:label="@string/title_activity_myorder" >
+        </activity>
+    </application>
+
+</manifest>

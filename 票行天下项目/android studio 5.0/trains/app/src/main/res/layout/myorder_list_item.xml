@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="215dp"
+    android:layout_marginBottom="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/yifukuan"
+        android:background="@drawable/myorderkuang">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已付款"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="12dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:background="@drawable/myorder"
+            android:textColor="#000000"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_below="@+id/yifukuan"
+        android:layout_alignParentEnd="true"></RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/sencond"
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:layout_below="@+id/line"
+        android:background="@drawable/myorderkuang">
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="32dp">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/img"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:text="联系人"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            />
+       </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+               <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身份证:"
+                   android:textColor="#000000"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="203232432435"
+                    android:id="@+id/identify"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号:"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="203232432435"
+                    android:id="@+id/phone"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始地"
+                android:id="@+id/start"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="->"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目的地"
+                android:id="@+id/end"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间"
+                android:id="@+id/date"
+                android:layout_margin="1dp"
+                android:textColor="#000000"/>
+
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000000"
+        android:layout_below="@+id/sencond"
+        android:layout_alignParentEnd="true"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_below="@+id/line2"
+        android:id="@+id/pricespace"
+        android:background="@drawable/myorderkuang">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:textColor="#ff0000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/price"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="共一人"
+        android:textSize="8sp"
+        android:layout_alignBottom="@+id/price"
+        android:layout_toRightOf="@+id/price"
+        android:textColor="#000000"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@drawable/space"
+        android:layout_below="@+id/pricespace"
+        >
+    </ImageView>
+</RelativeLayout>

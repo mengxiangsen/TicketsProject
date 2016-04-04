@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbackground">
+
+
+
+    <RelativeLayout
+        android:layout_width="270dp"
+        android:layout_height="480dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            >
+            
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="157dp"
+                android:layout_height="38dp"
+                android:hint="  输入验证码"
+                android:textColorHint="#ccc"
+                android:background="@drawable/register_yanzheng"
+                android:layout_alignParentLeft="true"
+                />
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="106dp"
+                android:layout_height="38dp"
+                android:text="  获取验证"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/register_yanzhengbutton"/>
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:hint="  输入手机号/账号"
+            android:textColorHint="#ccc"
+            android:background="@drawable/register_yanzheng"
+            android:layout_above="@+id/center"
+            android:layout_marginBottom="15dp"
+            />
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:hint="  输入密码"
+            android:textColorHint="#ccc"
+            android:layout_below="@+id/center"
+            android:background="@drawable/register_yanzheng"
+            android:password="true"
+            android:maxLength="6"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:hint="  再次输入密码"
+            android:textColorHint="#ccc"
+            android:layout_below="@+id/edt1"
+            android:background="@drawable/register_yanzheng"
+            android:password="true"
+            android:maxLength="6"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:text="一键注册"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/register_yanzhengbutton"
+            android:layout_below="@+id/edt2"
+            android:layout_marginTop="15dp"/>
+       
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:src="@drawable/logo"
+            android:layout_above="@+id/editText1"
+            android:layout_marginBottom="-30dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.administrator.traintickets.show_list_item"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始时间"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:textColor="#303338"
+        />
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="到达时间"
+        android:layout_below="@+id/information"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:textColor="#7d8089"
+        />
+
+    <TextView
+        android:id="@+id/startPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始地"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="#303338"/>
+    <TextView
+        android:id="@+id/endPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="目的地"
+        android:layout_below="@+id/startPlace"
+        android:textSize="15dp"
+        android:layout_alignLeft="@+id/startPlace"
+        android:textColor="#7d8089"/>
+
+   <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类型"
+        android:layout_below="@id/endTime"
+        android:textSize="12dp"
+        android:layout_alignLeft="@+id/endTime"
+       android:layout_marginTop="2dp"
+       android:textColor="#7d8089"/>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" | "
+        android:layout_below="@id/endTime"
+        android:layout_toRightOf="@+id/type"
+        android:textColor="#7d8089"/>
+
+    <TextView
+        android:id="@+id/vehicleNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车辆编号"
+        android:layout_toRightOf="@+id/line"
+        android:layout_below="@+id/endTime"
+        android:textSize="12dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#7d8089"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:textSize="22dp"
+        android:textColor="#ff0000"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>
